@@ -1,0 +1,41 @@
+//Create python virtual enviroment\\
+
+python -m venv <enviroment_name>
+
+//Activate enviroment\\
+
+source <enviroment_name>/bin/activate (on Linux)
+
+//Install requirements\\
+
+pip install -r requirements.txt
+
+//Create local database\\
+
+python manage.py migrate
+
+//Load dummy data\\
+
+python manage.py loaddata fixtures/drone.json --app drone.Drone
+python manage.py loaddata fixtures/medication.json --app drone.Medication
+python manage.py loaddata fixtures/shipping.json --app drone.Shipping
+
+//Run local server\\
+
+python manage.py runserver
+
+//Endpoints URLS\\
+
+GET /api/v1/drones/ - List all drones 
+POST /api/v1/drones/ - Create new drone 
+GET /api/v1/drones/available_drones/ - List all available drones 
+GET /api/v1/drones/<pk>/battery/ - Return battery level of given drone
+GET /api/v1/drones/<pk>/medications/ - Return medications loadad on given drone
+
+GET /api/v1/medication/ - List all medications
+POST /api/v1/medication/ - Create new medication
+
+GET /api/v1/shipping/ - List all shipping
+POST /api/v1/shipping/ - Create new shipping
+                      
+

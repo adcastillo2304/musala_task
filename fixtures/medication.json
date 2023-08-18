@@ -1,0 +1,32 @@
+[
+{
+    "model": "drone.medication",
+    "pk": 1,
+    "fields": {
+        "name": "Paracetamol",
+        "weight": 250.0,
+        "code": "12878_AD",
+        "image": ""
+    }
+},
+{
+    "model": "drone.medication",
+    "pk": 2,
+    "fields": {
+        "name": "Nobatropin",
+        "weight": 15.0,
+        "code": "ADERF7856",
+        "image": ""
+    }
+},
+{
+    "model": "drone.medication",
+    "pk": 3,
+    "fields": {
+        "name": "Aspirina",
+        "weight": 50.0,
+        "code": "ASDE_369",
+        "image": ""
+    }
+}
+]

@@ -1,0 +1,13 @@
+[
+{
+    "model": "drone.shipping",
+    "pk": 9,
+    "fields": {
+        "drone": 3,
+        "medications": [
+            3,
+            2
+        ]
+    }
+}
+]
